@@ -1,0 +1,8 @@
+{
+  "modules": { 
+    "jeux": {
+      "description": "Aide aux jeux de socièté",
+      "version": "1.0"
+    }
+  }
+}

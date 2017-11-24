@@ -1,0 +1,173 @@
+<div id="Oracle des Anges">
+  
+  <div class="row-fluid">
+		<div class="span11">
+<h2>Jeux - pour Sarah V3</h2>
+
+<p>Auteur : Hervé le hibou</p>
+
+			<p>Le plugin <b>Jeux</b> est un petit plugin fonctionnant sous SARAH version 3, capable de faire plusieurs petites choses.</p>
+
+
+<font color="#0080ff" >
+<ol>
+<li>Permet de simuler le lancement aléatoire d'un dé virtuel, si vous jouez à un jeu nécéssitant un dé et que vous n'en avez pas sous la main.</li>
+<br>
+<li>Permet de simuler le lancement aléatoire d'un dé virtuel pipé, (en trichant 50% de chance de tomber sur le résultat souhaité).</li>
+<br>
+<li>Permet de simuler le lancement aléatoire de deux dés virtuels, si vous jouez à un jeu nécéssitant deux dés et que vous n'en avez pas sous la main.</li>
+<br>
+<li>Permet de simuler le lancement aléatoire de deux dés virtuels pipés, (en trichant 50% de chance de tomber sur le résultat souhaité).</li>
+<br>
+<li>Permet de choisir une carte au hasard d'un jeu de poker virtuel (jeu de 52 cartes).</li>
+<br>
+<li>Permet de jouer à pile ou face avec une pièce virtuelle lancée par Sarah.</li>
+</ol>
+</font>
+
+
+
+
+<hr align="center" >
+
+<h3><u><font color="#0080ff" >Installation</u> :</font></h3>
+
+		<p>
+		<ul>
+		<li>Téléchargez et dézippez le plugin sur votre ordinateur.</li><br>
+		<li>Au cas ou ce ne serait pas déjà le cas, renomez le dernier dossier <b>jeux</b> et placez le directement sous le répertoire <b>C:/sarah/plugins/</b></li><br>
+		<li>le répertoire <b>jeux</b> doit contenir directement les fichiers suivants :
+			<ul>
+			<li><b>index.html (le présent fichier d'aide)</b></li>
+			<li><b>jeux.js</b></li>
+			<li><b>jeux.prop</b></li>
+			<li><b>jeux.xml</b></li>
+			<li><b>portlet.css</b></li>
+			<li><b>portlet.html</b></li>
+			<li><b>portlet_back.html</b></li>
+			<li>Le sous répertoire <b>"images"</b> contenant le fichier suivant :</li>
+				<ul>
+				<li><b>jeux.png</b></li>
+				</ul>
+			<li>Le sous répertoire <b>"medias"</b>  contenant les fichiers suivants :</li>
+				<ul>
+				<li><b>carte.mp3</b></li>
+				<li><b>de.mp3</b></li>
+				<li><b>piece.mp3</b></li>
+				</ul>
+			</ul>
+		</ul>
+		</p>
+
+<p>
+<b><font color="#ff0000" >IMPORTANT</font></b> : Vous ne devez pas avoir de sous répertoires du type C:/sarah/plugins/jeux-master/jeux/
+</p>
+
+<hr align="center" >
+
+<h3><u><font color="#0080ff" >Fonctionnement du plugin</u> :</font></h3>
+
+		<p>Ce pluging est entièrement basé sur le hasard (ou hasard un peu forcé pour les dés pipés) et lance selon des phrases clés une action avec des réponses aléatoires parmi un choix de plusieurs réponses possibles. Le tout agrémenté d'un petit effet sonore au format mp3 soulignant l'action.</p>
+
+<p>
+<ul>
+<li><b>Lancement d'un dé virtuel :</b></li>
+		<ul>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >lance un dé</font></b></li>
+		</ul>
+
+</ul>
+</p>
+
+<p>-----------------------------------------------------------------------------------</p>
+
+<p>
+<ul>
+<li><b>Lancement d'un dé virtuel pipé (truqué) :</b></li>
+		<ul>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >lance moi un dé</font></b></li>
+		</ul>
+
+</ul>
+<p>Le dé est actuellement pipé avec le chiffre 6, vous avez 50% de fois plus de chance que le résultat soit le 6, le chiffre pipé est modifiable dans le fichier <b>jeux.js</b> en remplaçant les valeurs Txt[7] à Txt[12] de la case "1depipe".</p>
+</p>
+
+<p>-----------------------------------------------------------------------------------</p>
+
+<p>
+<ul>
+<li><b>Lancement de deux dés virtuels :</b></li>
+		<ul>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >lance deux dés</font></b></li>
+		</ul>
+
+</ul>
+</p>
+
+<p>-----------------------------------------------------------------------------------</p>
+
+<p>
+<ul>
+<li><b>Lancement de deux dés virtuels pipés (truqués) :</b></li>
+		<ul>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >lance moi deux dés</font></b></li>
+		</ul>
+
+</ul>
+<p>Les deux dés sont actuellement pipés avec le chiffre 6, vous avez 50% de fois plus de chance que le résultat soit un double 6, les chiffres pipés sont modifiables dans le fichier <b>jeux.js</b> en remplaçant les valeurs Txt[36] à Txt[70] de la case "2depipe".</p>
+</p>
+
+<p>-----------------------------------------------------------------------------------</p>
+
+<p>
+<ul>
+<li><b>Choix d'une carte au hasard dans un jeu de poker virtuel de 52 cartes :</b></li>
+		<ul>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >choisi une carte</font></b></li>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >choisi une autre carte</font></b></li>
+		</ul>
+
+</ul>
+</p>
+
+<p>-----------------------------------------------------------------------------------</p>
+
+<p>
+<ul>
+<li><b>Jouer à pile ou face :</b></li>
+		<ul>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >pile ou face</font></b></li>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >on joue à pile ou face</font></b></li>
+		</ul>
+</ul>
+<p>A ce moment, Sarah vous demandera de choisir entre pile ou face.</p>
+
+<ul>
+<ul>
+<ul>
+<li><b>Choisir le côté pile :</b></li>
+		<ul>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >pile</font></b></li>
+		</ul>
+
+<br>
+
+<li><b>Choisir le côté face :</b></li>
+		<ul>
+		<li><b><font color="#ff8040" >Sarah</font>, <font color="#008000" >face</font></b></li>
+		</ul>
+</ul>
+</ul>
+</ul>
+</p>
+
+<hr align="center" >
+
+<p>Bonne utilisation à tous.</p>
+<p>Les remontées sur le forum sont les bienvenues.</p>
+      			
+	
+
+			
+
+ 

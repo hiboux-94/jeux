@@ -1,0 +1,31 @@
+ 	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulejeux" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulejeux" scope="public">
+    <tag>out.action=new Object(); </tag>
+
+    <item>Sarah</item>
+
+    <one-of>
+
+		<item>lance un dé<tag>out.action.val="1de"</tag></item>
+		
+		<item>lance moi un dé<tag>out.action.val="1depipe"</tag></item>
+
+		<item>lance deux dé<tag>out.action.val="2de"</tag></item>
+		
+		<item>lance moi deux dé<tag>out.action.val="2depipe"</tag></item>
+
+		<item>choisi une carte<tag>out.action.val="carte"</tag></item>
+		<item>choisi une autre carte<tag>out.action.val="carte"</tag></item>
+
+		<item>pile ou face<tag>out.action.val="pile-face"</tag></item>
+		<item>on joue a pile ou face<tag>out.action.val="pile-face"</tag></item>
+
+		<item>pile<tag>out.action.val="pile"</tag></item>
+
+		<item>face<tag>out.action.val="face"</tag></item>
+		
+	</one-of>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/jeux";</tag>
+  </rule> 
+</grammar>	
